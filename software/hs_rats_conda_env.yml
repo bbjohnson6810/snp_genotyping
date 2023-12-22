@@ -1,0 +1,10 @@
+# name: hs_rats
+channels:
+  -conda-forge
+  -bioconda
+dependencies:
+  -r-stitch
+  -seaborn
+  -multiqc
+  -r-essentials
+  -r-viridis

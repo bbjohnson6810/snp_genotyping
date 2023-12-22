@@ -1,0 +1,9 @@
+channels:
+  -conda-forge
+  -bioconda
+dependencies:
+  -r-stitch
+  -r-essentials
+  -r-viridis
+  -seaborn
+  -multiqc
