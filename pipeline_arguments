@@ -1,0 +1,35 @@
+#### PIPELINE ARGUMENTS FOR THE PALMER LAB HS RAT GENOTYPING PIPELINE ####
+
+# place absolute paths for directories and files on the designated lines below
+# do not delete or reorder any lines, or the pipeline will fail!
+
+## UNIVERSAL ARGUMENTS - FOR NEWLY-SEQUENCED INDIVIDUAL FLOWCELLS AND FULL GENOTYPING ROUNDS ##
+
+# replace line 9 below with your working directory (usually, the flow cell directory)
+/projects/ps-palmer/hs_rats/round10_2
+# replace line 11 below with the directory that holds all code for the pipeline
+/projects/ps-palmer/hs_rats/round10_2/code_rn7
+# replace line 13 below with the directory that holds various software input files
+/projects/ps-palmer/hs_rats/round10_2/inputs
+# replace line 15 below with the path to the reference genome
+/projects/ps-palmer/reference_genomes/rat/GCF_015227675.2_mRatBN7.2_genomic.fna
+
+## ADDITIONAL ARGUMENTS FOR NEWLY-SEQUENCED INDIVIDUAL FLOWCELLS ##
+
+# replace line 20 below with input flow cell metadata (the original sample sheet for the flowcell)
+
+# replace line 22 below with the master sequencing data directory (that contains all flowcells)
+/projects/ps-palmer/sequencing_data
+
+## ADDITIONAL ARGUMENTS FOR FULL GENOTYPING ROUNDS ANALYZING MULTIPLE FLOWCELLS ##
+
+# replace line 27 below with the name of the current genotyping round
+round10_2
+# replace line 29 below with the path to the reference panels used for STITCH
+/projects/ps-palmer/hs_rats/Ref_panel_mRatBN7.2/Ref_panel/Palmer_HS_founders_mRatBN7_2_bi_SNPs_concor_hom_phased
+# replace line 31 below with the path to a list of file paths for demultiplexed metadata files for all newly sequenced flowcells to be included in this genotyping round
+/projects/ps-palmer/hs_rats/round10_2/inputs/round10_2_new_flowcells_metadata
+# replace line 33 below with the path to the most recent genotyping round's metadata
+/projects/ps-palmer/hs_rats/round10_1/round10_1_metadata.csv
+# replace line 35 below with the path to the most recent genotyping round's genotyping log
+/projects/ps-palmer/hs_rats/round10_1/results/hs_rats_stitch_n16342_20230809_genotype_log.csv
